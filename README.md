@@ -13,5 +13,4 @@ Setting up your development environment
 + install android-sdk
     - [http://developer.android.com/sdk/installing/index.html]
 + clone this repository in your workspace directory 
-    - `git clone url` 
-+ 
+    - `git clone https://github.com/apoorvingle/phonegap-test.git`
