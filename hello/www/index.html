@@ -24,18 +24,36 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
         <title>Hello World</title>
     </head>
     <body>
         <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+            <div class="container">
+                <div class="row">
+                    <div class="input-group col-md-3">
+                        <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <div class="col-md-3" id="display"><a class="btn btn-primary">Display Message</a></div>
+                    <div class="col-md-3" id="message"></div>
+                </div>
             </div>
+
         </div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function() {
+                $("#display").click(function(){
+                    var username = $("#username").val();
+                    $("#message").html("Hello " + username +"!"); 
+                });
+                //console.log( "ready!" );
+            });
+        
+        </script>
     </body>
 </html>
