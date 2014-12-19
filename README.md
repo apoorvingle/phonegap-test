@@ -13,11 +13,10 @@ Setting up your development environment
 Getting the sample code
 + clone this repository in your workspace directory 
     - `git clone https://github.com/apoorvingle/phonegap-test.git`
-
 + change your directory to the hello working directory
     - `cd hello`
 + add android platform to your project
-    - `cordova platform add android
+    - `cordova platform add android`
 + build the project to create an apk
     - `cordova build`
 + test your application 
