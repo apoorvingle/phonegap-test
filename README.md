@@ -23,6 +23,9 @@ Getting the sample code
     - on an emulator by `cordova emulate android`
     - on an actual device connected using adb `cordova run android`
 
-+ all your app html js css images etc files would be in www/ folder
-+ do not change any other files other than files in www/ unless you are 100%
++ all your application html, js, css, images etc files would be in `www/` folder
++ __Do not change__ any other files other than files in `www/` unless you are 100%
   sure what you are doing.
+
+###### Cheers!
+
